@@ -1008,25 +1008,61 @@ Tip: The pie chart shows the final results based on all your weights (criteria a
 
 
 
-        function setupFinal() {
-
+            function setupFinal() {
             const container = document.getElementById('dimensions-with-criteria');
-
             container.innerHTML = '';
+            
+            const dimConfig = [
+                { id: 'environmental', name: 'Environment', color: '#27ae60', bgColor: '#e8f5e9' },
+                { id: 'social', name: 'Social', color: '#e67e22', bgColor: '#fff4e6' },
+                { id: 'economic', name: 'Economic', color: '#3498db', bgColor: '#e6f0fa' },
+                { id: 'technical', name: 'Technical', color: '#9b59b6', bgColor: '#f3e8ff' }
+            ];
 
-            ['environmental', 'social', 'economic', 'technical'].forEach((dim, idx) => {
+            dimConfig.forEach((dim, idx) => {
+                const critList = criteria[dim.id].map(c => `<li>${c.name}</li>`).join('');
+                
+                const card = document.createElement('div');
+                card.style = `border: 2px solid ${dim.color}; border-radius: 10px; margin-bottom: 20px; overflow: hidden; background: white;`;
+                
+                card.innerHTML = `
+                    <div style="background-color: ${dim.bgColor}; padding: 15px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 150px; font-weight: bold; color: ${dim.color}; font-size: 1.2rem;">${dim.name}</div>
+                        <div style="flex: 2; min-width: 200px;">
+                            <input type="range" class="slider" id="dim-s-${idx}" min="0" max="100" value="${values.dimensions[idx]}" style="width: 100%;">
+                        </div>
+                        <div style="width: 80px;">
+                            <input type="number" class="point-input" id="dim-i-${idx}" min="0" max="100" value="${values.dimensions[idx]}" style="width: 100%;">
+                        </div>
+                        <div class="value-box" id="dim-v-${idx}" style="min-width: 50px; color: ${dim.color}; background-color: #f0f4ff; padding: 8px; border-radius: 4px; text-align: center; font-weight: bold;">${values.dimensions[idx]}</div>
+                    </div>
+                    <div style="padding: 10px 25px; background: white; border-top: 1px solid #eee;">
+                        <ul style="font-size: 0.85rem; color: #666; list-style-type: disc; margin-left: 20px;">
+                            ${critList}
+                        </ul>
+                    </div>
+                `;
+                
+                container.appendChild(card);
 
-                const row = document.createElement('div'); row.className = 'criterion-row';
+                const s = document.getElementById(`dim-s-${idx}`);
+                const i = document.getElementById(`dim-i-${idx}`);
+                const v = document.getElementById(`dim-v-${idx}`);
 
-                row.innerHTML = `<div style="width:100%; display:flex; gap:15px; align-items:center;"><div style="flex:1;"><strong>${dim.toUpperCase()}</strong></div><div style="flex:2;"><input type="range" class="slider" id="dim-s-${idx}" min="0" max="100" value="${values.dimensions[idx]}"></div><div style="flex:0.5;"><input type="number" class="point-input" id="dim-i-${idx}" value="${values.dimensions[idx]}"></div></div>`;
+                const up = (val) => {
+                    val = parseInt(val) || 0;
+                    values.dimensions[idx] = val;
+                    s.value = val;
+                    i.value = val;
+                    v.textContent = val;
+                    updateDimTotal('dimensions');
+                    updateChart('dimensions');
+                };
 
-                container.appendChild(row);
-
-                const s = document.getElementById(`dim-s-${idx}`), i = document.getElementById(`dim-i-${idx}`);
-
-                const up = (val) => { values.dimensions[idx] = parseInt(val)||0; s.value = val; i.value = val; updateDimTotal('dimensions'); updateChart('dimensions'); };
-
-                s.oninput = (e) => up(e.target.value); i.oninput = (e) => up(e.target.value);
+                s.oninput = (e) => up(e.target.value);
+                i.oninput = (e) => up(e.target.value);
+            });
+        }
 
             });
 
