@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anneberg - Hierarchical Weighting Survey</title>
-    <script src="[https://cdn.jsdelivr.net/npm/chart.js](https://cdn.jsdelivr.net/npm/chart.js)"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -31,7 +31,7 @@
         
         h1 {
             color: #1a3e6f;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             border-bottom: 3px solid #1a3e6f;
             padding-bottom: 10px;
             font-size: 1.8rem;
@@ -45,18 +45,16 @@
              margin: 30px 0;
             font-size: 1.3rem;
             line-height:1.8;
-
         }
 
         .context-box-orange h3 {
-    font-size: 2rem; 
-    margin-bottom: 15px;
-    color: #d35400;               
-}
+            font-size: 2rem; 
+            margin-bottom: 15px;
+            color: #d35400;                
+        }
 
         .example-header {
             text-align: center;
-            margin: 40px 0 0 0;
             padding: 15px;
             background: #3498db;
             color: white;
@@ -68,7 +66,6 @@
         
         .example-container {
             border: 3px dashed #3498db;
-            border-top: none;
             padding: 25px;
             margin-bottom: 40px;
             background-color: #f0f7ff;
@@ -202,15 +199,14 @@
         
         .primary-btn { background-color: #1a3e6f; color: white; border: none; padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; cursor: pointer; font-weight: bold; }
         .status-message { text-align: center; padding: 15px; border-radius: 8px; margin: 20px 0; display: none; }
-        .status-success { background-color: #d4edda; color: #155724; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="margin-bottom: 5px; color: #1a3e6f;">Future Water Solutions for Anneberg: Your voice matters!</h1>
-<p style="font-style: italic; color: #7f8c8d; margin-top: 0; font-size: 1.1rem;">
-    A Chalmers Master’s Research Study on Local Stormwater Management 
-</p>
+        <h1>Future Water Solutions for Anneberg: Your voice matters!</h1>
+        <p style="font-style: italic; color: #7f8c8d; margin-top: 0; font-size: 1.1rem;">
+            A Chalmers Master’s Research Study on Local Stormwater Management 
+        </p>
         
         <div class="context-box-orange">
             <h3>📝 Your task</h3>
@@ -218,83 +214,65 @@
             More points = more importance.</p>
         </div>
 
-<div class="unified-example-box" style="border: 2px solid #3498db; border-radius: 12px; background-color: #f0f7ff; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15); margin-top: 40px; margin-bottom: 40px; overflow: hidden;">
-    
-    <div class="example-header" style="text-align: center; padding: 15px; background: #3498db; color: white; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #3498db;">
-        Explanatory Example: How to distribute your points
-    </div>
-
-    <div class="example-content" style="padding: 25px;">
-
-        <div style="font-weight: bold; color: #3498db; font-size: 1.2rem; margin-bottom: 10px;">💰 Economic Dimension</div>
-
-        <div style="background-color: #e1f0fa; border-left: 4px solid #3498db; border-radius: 8px; padding: 12px; font-size: 0.9rem; margin-bottom: 20px;">
-            <strong>About the economic dimension:</strong> Concerns the financial impact, such as the costs to build and maintain the solutions.
-        </div>
-
-        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); pointer-events: none;">
-            
-            <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap; margin-bottom: 30px;">
-                <div style="flex: 1; min-width: 200px;">
-                    <strong style="color: #2c3e50; font-size: 1.1rem;">Construction cost</strong><br>
-                    <small style="color: #666; font-style: italic;">The total one-time cost to build and install the solution.</small>
+        <div style="border: 2px solid #3498db; border-radius: 12px; background-color: #f0f7ff; margin: 40px 0; overflow: hidden;">
+            <div class="example-header">Explanatory Example: How to distribute your points</div>
+            <div style="padding: 25px;">
+                <div style="font-weight: bold; color: #3498db; font-size: 1.2rem; margin-bottom: 10px;">💰 Economic Dimension</div>
+                <div style="background-color: #e1f0fa; border-left: 4px solid #3498db; border-radius: 8px; padding: 12px; font-size: 0.9rem; margin-bottom: 20px;">
+                    <strong>About the economic dimension:</strong> Concerns the financial impact, such as the costs to build and maintain the solutions.
                 </div>
-                <div style="flex: 2; height: 8px; background: #d3d3d3; border-radius: 5px; position: relative; min-width: 150px;">
-                    <div style="position: absolute; left: 80%; top: -6px; width: 20px; height: 20px; background: #3498db; border-radius: 50%;"></div>
-                </div>
-                <div style="width: 60px; text-align: center; font-weight: bold; font-size: 1.2rem; color: #1a3e6f; background-color: #f0f4ff; padding: 8px; border-radius: 4px;">80</div>
-            </div>
 
-            <div style="overflow-x: auto; border-top: 1px solid #eee; padding-top: 25px; margin-bottom: 25px;">
-                <div style="display: flex; justify-content: space-between; min-width: 600px; margin-bottom: 8px; padding: 0 5px;">
-                    <div style="width:32px;"></div>
-                    <div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#e95e4d;">ALT 2</div>
-                    <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-                    <div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#f1c40f;">REF</div>
-                    <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-                    <div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#29bd6a;">ALT 1</div>
-                    <div style="width:32px;"></div><div style="width:32px;"></div>
-                </div>
-                
-                <div style="display: flex; justify-content: space-between; min-width: 600px; padding: 0 5px;">
-                    <div class="static-circle" style="border: 2px solid #e74c3c; color: #e74c3c;">-10</div>
-                    <div class="static-circle" style="background: #e95e4d; color: white; border: none;">-9</div>
-                    <div class="static-circle" style="border: 2px solid #eb715f; color: #eb715f;">-8</div>
-                    <div class="static-circle" style="border: 2px solid #ed8370; color: #ed8370;">-7</div>
-                    <div class="static-circle" style="border: 2px solid #ef9581; color: #ef9581;">-6</div>
-                    <div class="static-circle" style="border: 2px solid #f39c12; color: #f39c12;">-5</div>
-                    <div class="static-circle" style="border: 2px solid #f3a413; color: #f3a413;">-4</div>
-                    <div class="static-circle" style="border: 2px solid #f2ac13; color: #f2ac13;">-3</div>
-                    <div class="static-circle" style="border: 2px solid #f2b414; color: #f2b414;">-2</div>
-                    <div class="static-circle" style="border: 2px solid #f1bc15; color: #f1bc15;">-1</div>
-                    <div class="static-circle" style="background: #f1c40f; color: white; border: none;">0</div>
-                    <div class="static-circle" style="border: 2px solid #c4cc31; color: #c4cc31;">1</div>
-                    <div class="static-circle" style="border: 2px solid #97d452; color: #97d452;">2</div>
-                    <div class="static-circle" style="border: 2px solid #6bdc74; color: #6bdc74;">3</div>
-                    <div class="static-circle" style="border: 2px solid #3ee495; color: #3ee495;">4</div>
-                    <div class="static-circle" style="border: 2px solid #2ecc71; color: #2ecc71;">5</div>
-                    <div class="static-circle" style="border: 2px solid #2cbc6e; color: #2cbc6e;">6</div>
-                    <div class="static-circle" style="border: 2px solid #2ab46b; color: #2ab46b;">7</div>
-                    <div class="static-circle" style="background: #29bd6a; color: white; border: none;">8</div>
-                    <div class="static-circle" style="border: 2px solid #27a465; color: #27a465;">9</div>
-                    <div class="static-circle" style="border: 2px solid #27ae60; color: #27ae60;">10</div>
-                </div>
-                
-                <div style="display: flex; justify-content: space-between; min-width: 600px; font-size: 0.65rem; color: #999; margin-top: 10px; padding: 0 5px;">
-                    <span>← Much more expensive</span>
-                    <span>0 (reference alternative)</span>
-                    <span>Much cheaper →</span>
-                </div>
-            </div>
+                <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); pointer-events: none;">
+                    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap; margin-bottom: 30px;">
+                        <div style="flex: 1; min-width: 200px;">
+                            <strong style="color: #2c3e50; font-size: 1.1rem;">Construction cost</strong><br>
+                            <small style="color: #666; font-style: italic;">The total one-time cost to build and install the solution.</small>
+                        </div>
+                        <div style="flex: 2; height: 8px; background: #d3d3d3; border-radius: 5px; position: relative; min-width: 150px;">
+                            <div style="position: absolute; left: 80%; top: -6px; width: 20px; height: 20px; background: #3498db; border-radius: 50%;"></div>
+                        </div>
+                        <div style="width: 60px; text-align: center; font-weight: bold; font-size: 1.2rem; color: #1a3e6f; background-color: #f0f4ff; padding: 8px; border-radius: 4px;">80</div>
+                    </div>
 
-            <div style="border-top: 1px solid #eee; padding-top: 20px;">
-                <p style="font-size: 1rem; color: #2c3e50; line-height: 1.6; margin: 0;">
-                    <strong>How to think:</strong> In this example, the authors have already graded all alternatives. Notice the large gap between -9 (poor grade) and +8 (good grade). We assigned 80 points here because there is such a massive difference in how the alternatives perform, e.g how much they cost. 
-                    When you distribute your points, look at the distance between the circles to judge how much that performance difference matters for your decision on the importance of the criteria.
+                    <div style="overflow-x: auto; border-top: 1px solid #eee; padding-top: 25px; margin-bottom: 25px;">
+                        <div style="display: flex; justify-content: space-between; min-width: 650px; margin-bottom: 8px;">
+                            <div style="width:32px;"></div><div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#e95e4d;">ALT 2</div>
+                            <div style="width:320px;"></div><div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#f1c40f;">REF</div>
+                            <div style="width:230px;"></div><div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#29bd6a;">ALT 1</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; min-width: 650px;">
+                            <div class="static-circle" style="border: 2px solid #e74c3c; color: #e74c3c;">-10</div>
+                            <div class="static-circle" style="background: #e95e4d; color: white;">-9</div>
+                            <div class="static-circle" style="border: 2px solid #eb715f; color: #eb715f;">-8</div>
+                            <div class="static-circle" style="border: 2px solid #ed8370; color: #ed8370;">-7</div>
+                            <div class="static-circle" style="border: 2px solid #ef9581; color: #ef9581;">-6</div>
+                            <div class="static-circle" style="border: 2px solid #f39c12; color: #f39c12;">-5</div>
+                            <div class="static-circle" style="border: 2px solid #f3a413; color: #f3a413;">-4</div>
+                            <div class="static-circle" style="border: 2px solid #f2ac13; color: #f2ac13;">-3</div>
+                            <div class="static-circle" style="border: 2px solid #f2b414; color: #f2b414;">-2</div>
+                            <div class="static-circle" style="border: 2px solid #f1bc15; color: #f1bc15;">-1</div>
+                            <div class="static-circle" style="background: #f1c40f; color: white;">0</div>
+                            <div class="static-circle" style="border: 2px solid #c4cc31; color: #c4cc31;">1</div>
+                            <div class="static-circle" style="border: 2px solid #97d452; color: #97d452;">2</div>
+                            <div class="static-circle" style="border: 2px solid #6bdc74; color: #6bdc74;">3</div>
+                            <div class="static-circle" style="border: 2px solid #3ee495; color: #3ee495;">4</div>
+                            <div class="static-circle" style="border: 2px solid #2ecc71; color: #2ecc71;">5</div>
+                            <div class="static-circle" style="border: 2px solid #2cbc6e; color: #2cbc6e;">6</div>
+                            <div class="static-circle" style="border: 2px solid #2ab46b; color: #2ab46b;">7</div>
+                            <div class="static-circle" style="background: #29bd6a; color: white;">8</div>
+                            <div class="static-circle" style="border: 2px solid #27a465; color: #27a465;">9</div>
+                            <div class="static-circle" style="border: 2px solid #27ae60; color: #27ae60;">10</div>
+                        </div>
+                    </div>
+
+                    <div style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <p style="font-size: 1rem; color: #2c3e50; line-height: 1.6; margin: 0;">
+                            <strong>How to think:</strong> In this example, the authors have already graded all alternatives. Notice the large gap between -9 (poor) and +8 (good). We assigned <strong>80 points</strong> here because there is such a massive difference in how the alternatives perform. When you distribute your points, look at the distance between the circles to judge how much that performance difference matters for your decision on the importance of the criteria.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
         <div class="step-indicator">
             <div class="step active" id="step1-indicator">Environment</div>
@@ -306,23 +284,15 @@
 
         <div class="dimension-card environmental active" id="dim-environmental">
             <div class="dimension-header">🌿 Environmental Dimension</div>
-            <div class="description-box-miljo">
-                <strong>About the environmental dimension:</strong> This dimension concerns cleaning stormwater and promoting biodiversity.
-            </div>
-            <div class="instruction">⚖️ Distribute 100 points among the environmental criteria:</div>
+            <div class="description-box-miljo"><strong>About:</strong> Cleaning stormwater and promoting biodiversity.</div>
             <div id="env-sliders"></div>
-            <div class="total-section">
-                <div class="total-display" id="envTotal">0</div>
-                <div class="points-remaining" id="envRemaining"></div>
-            </div>
+            <div class="total-section"><div class="total-display" id="envTotal">0</div><div class="points-remaining" id="envRemaining"></div></div>
             <div class="chart-container"><canvas id="envChart"></canvas></div>
         </div>
 
         <div class="dimension-card social" id="dim-social">
             <div class="dimension-header">👥 Social Dimension</div>
-            <div class="description-box-social">
-                <strong>About the social dimension:</strong> Quality of life, recreation, and educational values.
-            </div>
+            <div class="description-box-social"><strong>About:</strong> Quality of life, recreation, and education.</div>
             <div id="social-sliders"></div>
             <div class="total-section"><div class="total-display" id="socialTotal">0</div><div class="points-remaining" id="socialRemaining"></div></div>
             <div class="chart-container"><canvas id="socialChart"></canvas></div>
@@ -330,9 +300,7 @@
 
         <div class="dimension-card economic" id="dim-economic">
             <div class="dimension-header">💰 Economic Dimension</div>
-            <div class="description-box-ekonomi">
-                <strong>About the economic dimension:</strong> Construction and maintenance costs.
-            </div>
+            <div class="description-box-ekonomi"><strong>About:</strong> Construction and maintenance costs.</div>
             <div id="economic-sliders"></div>
             <div class="total-section"><div class="total-display" id="economicTotal">0</div><div class="points-remaining" id="economicRemaining"></div></div>
             <div class="chart-container"><canvas id="economicChart"></canvas></div>
@@ -340,22 +308,21 @@
 
         <div class="dimension-card technical" id="dim-technical">
             <div class="dimension-header">⚙️ Technical Dimension</div>
-            <div class="description-box-teknik">
-                <strong>About the technical dimension:</strong> Maintenance frequency and complexity.
-            </div>
+            <div class="description-box-teknik"><strong>About:</strong> Maintenance frequency and complexity.</div>
             <div id="technical-sliders"></div>
             <div class="total-section"><div class="total-display" id="technicalTotal">0</div><div class="points-remaining" id="technicalRemaining"></div></div>
             <div class="chart-container"><canvas id="technicalChart"></canvas></div>
         </div>
 
         <div class="dimension-card dimensions-weighting" id="dim-dimensions">
-            <div class="dimension-header">⚖️ Final Weighting</div>
-            <div class="description-box">Distribute 100 points among the four dimensions to show which of them are most important.
-                Why is this weighting done?
-
-This determines the overall balance. Previously, you have chosen what is most important within social, technical, economic, and environmental aspects - now you choose how these four dimensions weigh against each other.
-
-Tip: The pie chart shows the final results based on all your weights (criteria and dimension). You can go back and adjust the weights until you are satusfied with the overall outcome.</div>
+            <div class="dimension-header" style="border-bottom: none;">⚖️ Final Weighting - What dimension is most important?</div>
+            <div class="description-box" style="background-color: #f0f7ff; padding: 20px;">
+                <p><strong>📋 Your weightings within each dimension:</strong></p>
+                <p>Distribute 100 points among the four dimensions to show which is most important.</p><br>
+                <p><strong>Why is this weighting done?</strong></p>
+                <p>This determines the overall balance. Previously, you have chosen what is most important within categories - now you choose how these weigh against each other.</p><br>
+                <p><strong>Tip:</strong> The pie chart shows the final results. You can go back and adjust weights until satisfied.</p>
+            </div>
             <div id="dimensions-with-criteria"></div>
             <div class="total-section"><div class="total-display" id="dimensionsTotal">0</div><div class="points-remaining" id="dimensionsRemaining"></div></div>
             <div class="chart-container"><canvas id="dimensionsChart"></canvas></div>
@@ -368,17 +335,15 @@ Tip: The pie chart shows the final results based on all your weights (criteria a
 
         <div class="stakeholder-section" id="stakeholder-section" style="display: none;">
             <h3>About You</h3>
-            <select id="stakeholderRole" required>
+            <select id="stakeholderRole">
                 <option value="" disabled selected>Select your role...</option>
-                <option value="resident">Resident in the area</option>
-                <option value="municipality">Municipality / Authority</option>
-                <option value="researcher">Researcher / Expert</option>
+                <option value="resident">Resident</option>
+                <option value="municipality">Municipality</option>
+                <option value="researcher">Researcher</option>
                 <option value="other">Other</option>
             </select>
-            <textarea id="comments" rows="5" placeholder="Do you have any reflections? (optional)"></textarea>
-            <div style="text-align: center; margin-top: 20px;">
-                <button class="primary-btn" id="submitBtn" disabled>Submit my weighting</button>
-            </div>
+            <textarea id="comments" rows="4" placeholder="Any reflections? (optional)"></textarea>
+            <div style="text-align: center; margin-top: 20px;"><button class="primary-btn" id="submitBtn" disabled>Submit Weighting</button></div>
             <div id="statusMessage" class="status-message"></div>
         </div>
     </div>
@@ -386,36 +351,36 @@ Tip: The pie chart shows the final results based on all your weights (criteria a
     <script>
         const criteria = {
             environmental: [
-                { id: "nutrients", name: "Nutrient removal", desc: "Clean stormwater from nitrogen and phosphorus. Can cause overload of nutrients in aquatic environments and eutrification." },
-                { id: "pollutants", name: "pollutants: PAH and metald", desc: "Clean PAH and metals." },
-                { id: "particles", name: "Suspended solids removal", desc: "Clean stormwater from pollutants (PAH and metals). These pollutants can cause seriouis effects on aquatic environment and human health." },
-                { id: "biodiversity", name: "Biodiversity", desc: "Contributes to the variety of plants and animals." }
+                { id: "nutrients", name: "Nutrient removal", desc: "Clean stormwater from nitrogen and phosphorus." },
+                { id: "pollutants", name: "Pollutants: PAH & Metals", desc: "Clean PAH and metals." },
+                { id: "particles", name: "Suspended solids removal", desc: "Clean stormwater from particles." },
+                { id: "biodiversity", name: "Biodiversity", desc: "Variety of plants and animals." }
             ],
             social: [
-                { id: "recreation", name: "Recreation and attractiveness", desc: "Focus on creating a beautiful, relaxing, and easily accessible environment for residents and passersby in the area." },
-                { id: "education", name: "Education", desc: "Focus on the solution being educational and usable for pedagogical purposes, for example, for nearby schools.." }
+                { id: "recreation", name: "Recreation & Aesthetics", desc: "Beautiful and accessible environment." },
+                { id: "education", name: "Education", desc: "Educational use for nearby schools." }
             ],
             economic: [
-                { id: "installcost", name: "Construction cost", desc: "The one-time cost that arises directly during the construction and installation of the solution." },
-                { id: "maintenancecost", name: "Maintenance cost", desc: "The ongoing, annual costs for maintenance, cleaning, and inspection." }
+                { id: "installcost", name: "Construction cost", desc: "One-time cost for installation." },
+                { id: "maintenancecost", name: "Maintenance cost", desc: "Annual costs for upkeep." }
             ],
             technical: [
-                { id: "frequency", name: "Maintenance frequency", desc: "The need for regular maintenance, for example, how often you need to mow the grass or water the flowers." },
-                { id: "complexity", name: "Maintenance complexity", desc: "How advanced the maintenance is, meaning whether it requires special tools or expert knowledge." }
+                { id: "frequency", name: "Maintenance frequency", desc: "How often maintenance is needed." },
+                { id: "complexity", name: "Maintenance complexity", desc: "Level of expert knowledge required." }
             ]
         };
 
         const criteriaScores = {
-            nutrients: { 'ALT 1': 0, 'ALT 2': -1, 'ALT 3': 0, 'ALT 4': 0 },
-            pahs_and_metals: { 'ALT 1': 0, 'ALT 2': 6, 'ALT 3': 3, 'ALT 4': 3 },
-            particles: { 'ALT 1': 0, 'ALT 2': 0, 'ALT 3': 0, 'ALT 4': 0 },
-            biodiversity: { 'ALT 1': 0, 'ALT 2': 2, 'ALT 3': 1, 'ALT 4': 1 },
-            recreation: { 'ALT 1': 1, 'ALT 2': 6, 'ALT 3': 4, 'ALT 4': 3 },
-            education: { 'ALT 1': 2, 'ALT 2': 8, 'ALT 3': 5, 'ALT 4': 7 },
-            installcost: { 'ALT 1': -2, 'ALT 2': -5, 'ALT 3': -4, 'ALT 4': -6 },
-            maintenancecost: { 'ALT 1': -1, 'ALT 2': -4, 'ALT 3': -3, 'ALT 4': -5 },
-            frequency: { 'ALT 1': -1, 'ALT 2': -6, 'ALT 3': -3, 'ALT 4': -3 },
-            complexity: { 'ALT 1': 1, 'ALT 2': -2, 'ALT 3': -1, 'ALT 4': -1 }
+            nutrients: { 'ALT 2': -1, 'REF': 0, 'ALT 1': 0 },
+            pollutants: { 'ALT 2': 6, 'REF': 0, 'ALT 3': 3 },
+            particles: { 'REF': 0 },
+            biodiversity: { 'ALT 2': 2, 'REF': 0, 'ALT 3': 1 },
+            recreation: { 'ALT 1': 1, 'ALT 2': 6, 'REF': 0 },
+            education: { 'ALT 1': 2, 'ALT 2': 8, 'REF': 0 },
+            installcost: { 'ALT 2': -5, 'REF': 0, 'ALT 1': -2 },
+            maintenancecost: { 'ALT 2': -4, 'REF': 0, 'ALT 1': -1 },
+            frequency: { 'ALT 2': -6, 'REF': 0, 'ALT 1': -1 },
+            complexity: { 'ALT 2': -2, 'REF': 0, 'ALT 1': 1 }
         };
 
         let values = { environmental: [0,0,0,0], social: [0,0], economic: [0,0], technical: [0,0], dimensions: [0,0,0,0] };
@@ -484,11 +449,41 @@ Tip: The pie chart shows the final results based on all your weights (criteria a
             });
         }
 
+        function setupFinal() {
+            const container = document.getElementById('dimensions-with-criteria');
+            container.innerHTML = '';
+            const config = [
+                { id: 'environmental', name: 'Environment', color: '#27ae60', bgColor: '#e8f5e9' },
+                { id: 'social', name: 'Social', color: '#e67e22', bgColor: '#fff4e6' },
+                { id: 'economic', name: 'Economic', color: '#3498db', bgColor: '#e6f0fa' },
+                { id: 'technical', name: 'Technical', color: '#9b59b6', bgColor: '#f3e8ff' }
+            ];
+            config.forEach((dim, idx) => {
+                const list = criteria[dim.id].map(c => `<li>${c.name}</li>`).join('');
+                const card = document.createElement('div');
+                card.style = `border: 2px solid ${dim.color}; border-radius: 10px; margin-bottom: 20px; background: white; overflow: hidden;`;
+                card.innerHTML = `
+                    <div style="background:${dim.bgColor}; padding:15px; display:flex; align-items:center; gap:15px;">
+                        <div style="flex:1; font-weight:bold; color:${dim.color};">${dim.name}</div>
+                        <div style="flex:2;"><input type="range" class="slider" id="dim-s-${idx}" min="0" max="100" value="${values.dimensions[idx]}"></div>
+                        <div style="width:70px;"><input type="number" class="point-input" id="dim-i-${idx}" value="${values.dimensions[idx]}"></div>
+                        <div class="value-box" id="dim-v-${idx}" style="color:${dim.color};">${values.dimensions[idx]}</div>
+                    </div>
+                    <div style="padding:10px 25px;"><ul style="font-size:0.85rem; color:#666;">${list}</ul></div>`;
+                container.appendChild(card);
+                const s = document.getElementById(`dim-s-${idx}`), i = document.getElementById(`dim-i-${idx}`), v = document.getElementById(`dim-v-${idx}`);
+                const up = (val) => { val = parseInt(val)||0; values.dimensions[idx] = val; s.value = val; i.value = val; v.textContent = val; updateDimTotal('dimensions'); updateChart('dimensions'); };
+                s.oninput = (e) => up(e.target.value); i.oninput = (e) => up(e.target.value);
+            });
+        }
+
         function updateDimTotal(dim) {
             const sum = values[dim].reduce((a,b) => a+b, 0);
-            const tEl = document.getElementById(`${dim === 'environmental' ? 'env' : dim}Total`);
-            const rEl = document.getElementById(`${dim === 'environmental' ? 'env' : dim}Remaining`);
-            tEl.textContent = sum; tEl.style.color = sum === 100 ? '#27ae60' : '#e74c3c';
+            const prefix = dim === 'environmental' ? 'env' : dim;
+            const tEl = document.getElementById(`${prefix}Total`);
+            const rEl = document.getElementById(`${prefix}Remaining`);
+            tEl.textContent = sum;
+            tEl.style.color = sum === 100 ? '#27ae60' : '#e74c3c';
             const rem = 100 - sum;
             rEl.innerHTML = rem === 0 ? "✅ Perfect!" : (rem > 0 ? `📊 ${rem} points left` : `⚠️ ${Math.abs(rem)} too many`);
             rEl.style.color = rem === 0 ? '#27ae60' : '#e74c3c';
@@ -497,33 +492,26 @@ Tip: The pie chart shows the final results based on all your weights (criteria a
         }
 
         function updateChart(dim) {
-            const canvas = document.getElementById(`${dim === 'environmental' ? 'env' : dim}Chart`);
+            const prefix = dim === 'environmental' ? 'env' : dim;
+            const canvas = document.getElementById(`${prefix}Chart`);
             if(!canvas) return;
             if(charts[dim]) charts[dim].destroy();
             charts[dim] = new Chart(canvas, { type: 'pie', data: { labels: criteria[dim] ? criteria[dim].map(c=>c.name) : ['Env','Social','Eco','Tech'], datasets: [{ data: values[dim], backgroundColor: ['#2ecc71', '#3498db', '#9b59b6', '#e67e22'] }] } });
         }
 
-        function setupFinal() {
-            const container = document.getElementById('dimensions-with-criteria');
-            container.innerHTML = '';
-            ['environmental', 'social', 'economic', 'technical'].forEach((dim, idx) => {
-                const row = document.createElement('div'); row.className = 'criterion-row';
-                row.innerHTML = `<div style="width:100%; display:flex; gap:15px; align-items:center;"><div style="flex:1;"><strong>${dim.toUpperCase()}</strong></div><div style="flex:2;"><input type="range" class="slider" id="dim-s-${idx}" min="0" max="100" value="${values.dimensions[idx]}"></div><div style="flex:0.5;"><input type="number" class="point-input" id="dim-i-${idx}" value="${values.dimensions[idx]}"></div></div>`;
-                container.appendChild(row);
-                const s = document.getElementById(`dim-s-${idx}`), i = document.getElementById(`dim-i-${idx}`);
-                const up = (val) => { values.dimensions[idx] = parseInt(val)||0; s.value = val; i.value = val; updateDimTotal('dimensions'); updateChart('dimensions'); };
-                s.oninput = (e) => up(e.target.value); i.oninput = (e) => up(e.target.value);
-            });
-        }
-
         function checkSubmit() {
             const role = document.getElementById('stakeholderRole').value;
-            const dimSum = values.dimensions.reduce((a,b) => a+b, 0);
-            document.getElementById('submitBtn').disabled = !(role && dimSum === 100);
+            const sum = values.dimensions.reduce((a,b) => a+b, 0);
+            document.getElementById('submitBtn').disabled = !(role && sum === 100);
         }
 
         document.getElementById('nextBtn').onclick = () => {
-            if(currentStep === 4) { document.getElementById('dim-dimensions').classList.remove('active'); document.getElementById('stakeholder-section').style.display = 'block'; document.getElementById('nextBtn').style.display = 'none'; return; }
+            if(currentStep === 4) { 
+                document.getElementById('dim-dimensions').classList.remove('active'); 
+                document.getElementById('stakeholder-section').style.display = 'block'; 
+                document.getElementById('nextBtn').style.display = 'none'; 
+                return; 
+            }
             document.getElementById(`dim-${steps[currentStep]}`).classList.remove('active');
             currentStep++;
             document.getElementById(`dim-${steps[currentStep]}`).classList.add('active');
@@ -541,15 +529,6 @@ Tip: The pie chart shows the final results based on all your weights (criteria a
         };
 
         document.getElementById('stakeholderRole').onchange = checkSubmit;
-        document.getElementById('submitBtn').onclick = async () => {
-            const btn = document.getElementById('submitBtn'); btn.disabled = true; btn.textContent = "Sending...";
-            const scriptURL = '[https://script.google.com/macros/s/AKfycbz8B6ap7luHShh2s1s23v4QV9FbzUg6tjribSSHM04Uxwx9c-zi8lS0qe4j83ECMUmg/exec](https://script.google.com/macros/s/AKfycbz8B6ap7luHShh2s1s23v4QV9FbzUg6tjribSSHM04Uxwx9c-zi8lS0qe4j83ECMUmg/exec)';
-            const fd = new FormData();
-            fd.append('role', document.getElementById('stakeholderRole').value);
-            fd.append('comments', document.getElementById('comments').value);
-            try { await fetch(scriptURL, { method: 'POST', body: fd, mode: 'no-cors' }); document.getElementById('statusMessage').innerHTML = "✅ Submitted! Thank you."; document.getElementById('statusMessage').style.display = "block"; } catch(e) { alert("Error!"); btn.disabled = false; }
-        };
-
         window.onload = () => {
             generateSliders('environmental', 'env-sliders', values.environmental, criteria.environmental);
             generateSliders('social', 'social-sliders', values.social, criteria.social);
